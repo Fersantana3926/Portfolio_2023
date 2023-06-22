@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="styles.css">
+	<title>Fernando Santana</title>
+</head>
+
+<body>
+	<!--MENU ENCABEZADO-->
+	<div class="contenedor-header">
+		<header>
+			<div class="logo">
+				<a href="#"><em>F</em>(Santana)</a>
+			</div>
+			<div id="nav" class="responsive responsive2">
+				<ul>
+					<li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+					<li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+					<li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+					<li><a href="#cv" onclick="seleccionar()">CV</a></li>
+					<li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+					<li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+				</ul>
+			</div>
+			<div class="nav-responsive" onclick="mostrarOcultarMenu()">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</header>
+	</div>
+
+	<!--SECCION INICIO-->
+	<section id="inicio" class="inicio">
+		<div class="contenido-banner">
+			<div class="contenedor-img">
+				<img src="img/perfil.png" alt="fotoDePerfil">
+			</div>
+			<h1>FERNANDO SANTANA</h1>
+			<h2>Frontend Developer</h2>
+			<div class="redes">
+				<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+				<a href="#"><i class="fa-brands fa-github"></i></a>
+			</div>
+		</div>
+	</section>
+
+	<!--SECCION SOBRE MI-->
+	<section id="sobremi" class="sobremi">
+		<div class="contenido-seccion">
+			<h2>Sobre Mí</h2>
+			<p><span>Hola, me llamo Fernando Santana.</span> Soy un apasionado estudiante de segundo año, cursando la
+				Tecnicatura de Desarrollo de Software en la <a href="https://web.upe.edu.ar/" target="_blank">
+					Universidad Provincial de Ezeiza</a>. Desde temprana edad, he sentido una fuerte atracción hacia el
+				mundo de la tecnología y la informática, y me encuentro emocionado por desarrollarme en el fascinante
+				campo del desarrollo web. Mi objetivo principal es convertirme en un profesional altamente capacitado y
+				competente en el ámbito del desarrollo web. Disfruto trabajando en equipo y aprendiendo de mis
+				compañeros, ya que creo firmemente en el intercambio de ideas y conocimientos enriquecedores. Te invito
+				a explorar mi portafolio y conocer más sobre mi trabajo y mis habilidades. Si estás interesado en
+				colaborar en proyectos de desarrollo web o si tienes alguna pregunta, no dudes en contactarme. Estoy
+				ansioso por formar parte de tu próximo proyecto y ayudarte a alcanzar tus metas digitales.</p>
+
+			<div class="fila">
+				<!--Datos personales-->
+				<div class="col">
+					<h3>Datos personales</h3>
+					<ul>
+						<li><strong>Cumpleaños</strong>
+							27-11-1993 (29 años)
+						</li>
+						<li><strong>Telefono</strong>
+							11-6705-1684
+						</li>
+						<li><strong>Email</strong>
+							fernandoarielsantana3926@gmail.com
+						</li>
+						<li><strong>LinkedIn</strong>
+							www.linkedin.com/in/fernando-santana-ariel
+						</li>
+					</ul>
+				</div>
+
+				<!--Intereses-->
+				<div class="col">
+					<h3>Intereses</h3>
+					<div class="intereses">
+						<div class="contenedor-intereses">
+							<div class="interes">
+								<i class="fa-solid fa-gamepad"></i>
+								<span>JUEGOS</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-headphones"></i>
+								<span>MUSICA</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-drum"></i>
+								<span>BATERIA</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-futbol"></i>
+								<span>DEPORTES</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-car"></i>
+								<span>VIAJAR</span>
+							</div>
+							<div class="interes">
+								<i class="fa-solid fa-book"></i>
+								<span>LIBROS</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--DESCARGAR CV-->
+			<button id="cv">
+				<a download="CV" href="/SantanaFernandoCV2023.pdf">Descargar CV </a><i
+					class="fa-solid fa-download"></i>
+				<span class="overlay"></span>
+			</button>
+		</div>
+	</section>
+
+	<!--SECCION SKILLS-->
+	<div id="skills" class="skills">
+		<h3>SKILLS</h3>
+		<div class="contenedor-skills">
+			<div class="contenedor-icon">
+				<strong>GITHUB</strong>
+				<i class="fa-brands fa-github"></i>
+			</div>
+			<div class="contenedor-icon">
+				<strong>HTML</strong>
+				<i class="fa-brands fa-html5"></i>
+			</div>
+			<div class="contenedor-icon">
+				<strong>CSS</strong>
+				<i class="fa-brands fa-css3-alt"></i>
+			</div>
+			<div class="contenedor-icon">
+				<strong>JAVASCRIPT</strong>
+				<i class="fa-brands fa-square-js"></i>
+			</div>
+			<div class="contenedor-icon">
+				<strong>BOOTSTRAP</strong>
+				<i class="fa-brands fa-bootstrap"></i>
+			</div>
+			<div class="contenedor-icon">
+				<strong>FIGMA</strong>
+				<i class="fa-brands fa-figma"></i>
+			</div>
+			<div class="contenedor-icon">
+				<strong>PHOTOSHOP</strong>
+				<i class="fa-solid fa-camera"></i>
+			</div>
+			<div class="contenedor-icon">
+				<strong>MySQL</strong>
+				<i class="fa-solid fa-database"></i>
+			</div>
+		</div>
+	</div>
+
+	<!--SECCION PORTFOLIO-->
+	<section id="portfolio" class="portfolio">
+		<h2>PORTFOLIO</h2>
+		<div class="contenido-seccion">
+			<h2>PROXIMAMENTE<span>...</span></h2>
+		</div>
+	</section>
+
+	<!--SECCION CONTACTO-->
+	<section id="contacto" class="contacto">
+		<div class="contenido-seccion">
+			<h2>CONTACTO</h2>
+			<div class="fila">
+				<!--<div class="form">
+					<input type="text" placeholder="Tú nombre">
+					<input type="text" placeholder="Numero de telefono">
+					<input type="text" placeholder="Dirección de correo">
+					<input type="text" placeholder="Tu nombre">
+					<input type="text" placeholder="Tema">
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+					<button>
+						Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+						<span class="overlay"></span>
+					</button>
+				</div>-->
+				<form id="form">
+					<div class="field">
+						<label for="from_name"></label>
+						<input type="text" name="from_name" id="from_name" placeholder="Tú nombre">
+					</div>
+					<div class="field">
+						<label for="email_id"></label>
+						<input type="text" name="email_id" id="email_id" placeholder="Dirección de correo">
+					</div>
+					<div class="field">
+						<label for="message"></label>
+						<input type="text" name="message" id="message" placeholder="Escribe tu mensaje">
+					</div>
+					<input type="submit" id="button" value="Enviar">
+					<span class="overlay"></span>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!--JAVASCRIPT-->
+	<script src="script.js"></script>
+	<!--FUNCIONALIDAD DE EMAIL-->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+	<script type="text/javascript">
+		emailjs.init('K523KNwcUMQ4Kcoxe')
+	</script>
+</body>
+
+</html>
