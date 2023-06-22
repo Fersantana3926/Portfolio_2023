@@ -489,31 +489,24 @@ html {
 
     /*NAV*/
 
-    .responsive2 {
+    nav{
         display: none;
-        transition: 1s;
     }
-
-    .nav-responsive {
+    .nav-responsive{
         display: block;
     }
-
-    .responsive {
+    nav.responsive{
         display: block;
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #252a2e;
+        background-color: #252A2E;
         width: 180px;
-        text-align: center;
     }
-
-    .responsive ul {
-        display: inline-block !important;
-        width: 100%;
+    nav.responsive ul{
+        display: block !important;
     }
-
-    .responsive ul li {
+    nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
